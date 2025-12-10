@@ -8,8 +8,7 @@ on:
 
 jobs:
   hello:
-    runs-on: [ self-hosted ]
+    runs-on: self-hosted
     steps:
-      - name: Print hello.
+      - name: Print hello
         run: echo "Hello from my Mac self-hosted runner!"
-
