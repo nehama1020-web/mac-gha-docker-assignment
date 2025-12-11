@@ -1,0 +1,23 @@
+name: Hello World using custom Docker image
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    # Use the image we pushed to Docker Hub
+    container:
+      image: nehama1020/py-docker-base-hello:latest
+
+    steps:
+      - name: Print working directory
+        run: pwd
+
+      - name: List files
+        run: ls -R
+
+      - name: Run Python Hello World
+        run: python3 /app/app.py
+
