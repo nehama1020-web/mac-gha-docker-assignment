@@ -1,4 +1,4 @@
-name: Hello from self-hosted runner
+name: Hello from self-hosted runner.
 
 on:
   push:
